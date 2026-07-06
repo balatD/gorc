@@ -1,19 +1,27 @@
 # gorc
 
 <p align="center">
-  <img src="header.jpeg" alt="gorc" width="600">
+  <img src="header.jpeg" alt="gorc" width="900">
 </p>
 
-<p align="center">
-[![opencode plugin](https://img.shields.io/badge/opencode-plugin-purple?logo=opencode&logoColor=white)](https://opencode.ai)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/balatD/gorc?logo=github&style=flat)](https://github.com/balatD/gorc/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/balatD/gorc?logo=github)](https://github.com/balatD/gorc/issues)
-[![Last commit](https://img.shields.io/github/last-commit/balatD/gorc?logo=git&logoColor=white)](https://github.com/balatD/gorc/commits/main)
-[![Bun](https://img.shields.io/badge/built_with-bun-fbf014?logo=bun&logoColor=black)](https://bun.sh)
-[![TypeScript](https://img.shields.io/badge/lang-TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github)](https://github.com/balatD/gorc/pulls)
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://opencode.ai"><img src="https://img.shields.io/badge/opencode-plugin-purple?logo=opencode&logoColor=white" alt="opencode"></a>
+      <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="MIT"></a>
+      <a href="https://github.com/balatD/gorc/stargazers"><img src="https://img.shields.io/github/stars/balatD/gorc?logo=github&style=flat" alt="stars"></a>
+      <a href="https://github.com/balatD/gorc/issues"><img src="https://img.shields.io/github/issues/balatD/gorc?logo=github" alt="issues"></a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/balatD/gorc/commits/main"><img src="https://img.shields.io/github/last-commit/balatD/gorc?logo=git&logoColor=white" alt="last commit"></a>
+      <a href="https://bun.sh"><img src="https://img.shields.io/badge/built_with-bun-fbf014?logo=bun&logoColor=black" alt="bun"></a>
+      <a href="https://www.typescriptlang.org"><img src="https://img.shields.io/badge/lang-TypeScript-3178c6?logo=typescript&logoColor=white" alt="TS"></a>
+      <a href="https://github.com/balatD/gorc/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github" alt="PRs"></a>
+    </td>
+  </tr>
+</table>
 
 An [opencode](https://opencode.ai) plugin that ships a **conductor** primary
 agent plus a **fleet of cheap subagents** — `go-research`, `go-reader`,
