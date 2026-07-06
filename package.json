@@ -1,0 +1,46 @@
+{
+  "name": "opencode-go-orchestrator",
+  "version": "0.1.0",
+  "description": "A conductor agent plus a fleet of cheap subagents (research, reader, implementer, qa) for opencode. The conductor plans and delegates; the fleet does the grinding.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Dragan Balatinac"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/draganbalatinac/opencode-go-orchestrator.git"
+  },
+  "homepage": "https://github.com/draganbalatinac/opencode-go-orchestrator#readme",
+  "keywords": [
+    "opencode-plugin",
+    "opencode",
+    "orchestration",
+    "agents",
+    "subagents",
+    "conductor",
+    "fleet"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "agents",
+    "commands",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun build src/index.ts --outfile dist/index.js --target node",
+    "prepublishOnly": "bun run build",
+    "pretest": "bun run build",
+    "test": "bun ./test/smoke.mjs"
+  },
+  "devDependencies": {
+    "@opencode-ai/plugin": "^1.4.1"
+  }
+}
