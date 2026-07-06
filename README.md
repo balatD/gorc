@@ -1,5 +1,10 @@
 # gorc
 
+<p align="center">
+  <img src="header.jpeg" alt="gorc" width="600">
+</p>
+
+<p align="center">
 [![opencode plugin](https://img.shields.io/badge/opencode-plugin-purple?logo=opencode&logoColor=white)](https://opencode.ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub stars](https://img.shields.io/github/stars/balatD/gorc?logo=github&style=flat)](https://github.com/balatD/gorc/stargazers)
@@ -8,6 +13,7 @@
 [![Bun](https://img.shields.io/badge/built_with-bun-fbf014?logo=bun&logoColor=black)](https://bun.sh)
 [![TypeScript](https://img.shields.io/badge/lang-TypeScript-3178c6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?logo=github)](https://github.com/balatD/gorc/pulls)
+</p>
 
 An [opencode](https://opencode.ai) plugin that ships a **conductor** primary
 agent plus a **fleet of cheap subagents** — `go-research`, `go-reader`,

@@ -2,3 +2,4 @@ node_modules/
 *.log
 .npmrc
 # dist/ IS the artifact installed via git — keep it committed for github: installs
+.DS_Store
