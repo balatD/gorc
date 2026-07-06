@@ -1,6 +1,6 @@
 {
   "name": "@balatd/gorc",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A conductor agent plus a fleet of cheap subagents (research, reader, implementer, qa) for opencode. The conductor plans and delegates; the fleet does the grinding.",
   "type": "module",
   "license": "MIT",
