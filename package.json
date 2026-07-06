@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/draganbalatinac/opencode-go-orchestrator.git"
+    "url": "git+https://github.com/balatD/opencode-go-orchestrator.git"
   },
-  "homepage": "https://github.com/draganbalatinac/opencode-go-orchestrator#readme",
+  "homepage": "https://github.com/balatD/opencode-go-orchestrator#readme",
   "keywords": [
     "opencode-plugin",
     "opencode",
