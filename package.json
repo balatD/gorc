@@ -1,5 +1,5 @@
 {
-  "name": "@balatd/opencode-go-orchestrator",
+  "name": "@balatd/gorc",
   "version": "0.1.0",
   "description": "A conductor agent plus a fleet of cheap subagents (research, reader, implementer, qa) for opencode. The conductor plans and delegates; the fleet does the grinding.",
   "type": "module",
@@ -9,9 +9,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/balatD/opencode-go-orchestrator.git"
+    "url": "git+https://github.com/balatD/gorc.git"
   },
-  "homepage": "https://github.com/balatD/opencode-go-orchestrator#readme",
+  "homepage": "https://github.com/balatD/gorc#readme",
   "keywords": [
     "opencode-plugin",
     "opencode",

@@ -1,4 +1,4 @@
-# opencode-go-orchestrator
+# gorc
 
 An [opencode](https://opencode.ai) plugin that ships a **conductor** primary
 agent plus a **fleet of cheap subagents** — `go-research`, `go-reader`,
@@ -15,14 +15,14 @@ trawling, reading, and bulk editing.
 // opencode.jsonc
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["@balatd/opencode-go-orchestrator"]
+  "plugin": ["@balatd/gorc"]
 }
 ```
 
 To make the conductor your default agent:
 
 ```jsonc
-"plugin": [["@balatd/opencode-go-orchestrator", { "defaultAgent": "conductor" }]]
+"plugin": [["@balatd/gorc", { "defaultAgent": "conductor" }]]
 ```
 
 ## The fleet
@@ -56,7 +56,7 @@ options — any field you omit keeps its default:
 
 ```jsonc
 "plugin": [[
-  "@balatd/opencode-go-orchestrator",
+  "@balatd/gorc",
   {
     "conductorModel": "anthropic/claude-sonnet-4-6",
     "researchModel": "anthropic/claude-haiku-4-5",
