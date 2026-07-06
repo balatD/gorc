@@ -13,12 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v5
       - uses: oven-sh/setup-bun@v2
-      # npm Trusted Publishing needs npm >=11.5.1 (Node >=22.14.0); ubuntu-latest
-      # ships npm 10.9.8, so pin a modern Node. Don't set registry-url/NODE_AUTH_TOKEN
-      # — that's for token auth and would interfere with OIDC detection.
-      - uses: actions/setup-node@v4
+      # npm Trusted Publishing needs npm >=11.5.1 (Node >=22.14.0). setup-node
+      # ships a modern npm. registry-url is REQUIRED — without it npm doesn't
+      # know where to exchange the GitHub OIDC JWT for a publish token.
+      # Do NOT set NODE_AUTH_TOKEN — that's for token auth and would interfere
+      # with OIDC detection.
+      - uses: actions/setup-node@v5
         with:
-          node-version: "22.14"
+          node-version: "24"
+          registry-url: "https://registry.npmjs.org"
       - run: bun install --frozen-lockfile
       - run: bun run build
       - run: bun run test
