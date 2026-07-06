@@ -11,12 +11,21 @@ trawling, reading, and bulk editing.
 
 ## Install
 
+No npm publish required. opencode uses Bun to resolve plugin specifiers, so
+any git URL Bun understands works. Install straight from GitHub:
+
 ```jsonc
 // opencode.jsonc
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["@balatd/gorc"]
+  "plugin": ["github:balatD/gorc"]
 }
+```
+
+If you prefer the npm-published package, that still works too:
+
+```jsonc
+"plugin": ["@balatd/gorc"]
 ```
 
 To make the conductor your default agent:
