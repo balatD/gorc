@@ -9,16 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      id-token: write # npm --provenance
+      id-token: write # npm Trusted Publishing (OIDC) — no NPM_TOKEN secret needed
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: oven-sh/setup-bun@v2
+      # npm Trusted Publishing needs npm >=11.5.1 (Node >=22.14.0); ubuntu-latest
+      # ships npm 10.9.8, so pin a modern Node. Don't set registry-url/NODE_AUTH_TOKEN
+      # — that's for token auth and would interfere with OIDC detection.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.14"
       - run: bun install --frozen-lockfile
       - run: bun run build
       - run: bun run test
-      - name: Publish to npm
-        run: |
-          printf '//registry.npmjs.org/:_authToken=%s\n' "$NPM_TOKEN" > "$HOME/.npmrc"
-          npm publish --access public --provenance
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: npm publish --access public --provenance
