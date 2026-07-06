@@ -15,14 +15,14 @@ trawling, reading, and bulk editing.
 // opencode.jsonc
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["opencode-go-orchestrator"]
+  "plugin": ["@balatd/opencode-go-orchestrator"]
 }
 ```
 
 To make the conductor your default agent:
 
 ```jsonc
-"plugin": [["opencode-go-orchestrator", { "defaultAgent": "conductor" }]]
+"plugin": [["@balatd/opencode-go-orchestrator", { "defaultAgent": "conductor" }]]
 ```
 
 ## The fleet
@@ -56,7 +56,7 @@ options — any field you omit keeps its default:
 
 ```jsonc
 "plugin": [[
-  "opencode-go-orchestrator",
+  "@balatd/opencode-go-orchestrator",
   {
     "conductorModel": "anthropic/claude-sonnet-4-6",
     "researchModel": "anthropic/claude-haiku-4-5",

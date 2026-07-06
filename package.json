@@ -1,5 +1,5 @@
 {
-  "name": "opencode-go-orchestrator",
+  "name": "@balatd/opencode-go-orchestrator",
   "version": "0.1.0",
   "description": "A conductor agent plus a fleet of cheap subagents (research, reader, implementer, qa) for opencode. The conductor plans and delegates; the fleet does the grinding.",
   "type": "module",
@@ -34,6 +34,9 @@
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "bun build src/index.ts --outfile dist/index.js --target node",
     "prepublishOnly": "bun run build",
