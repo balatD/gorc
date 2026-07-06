@@ -1,6 +1,6 @@
 {
   "name": "@balatd/gorc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A conductor agent plus a fleet of cheap subagents (research, reader, implementer, qa) for opencode. The conductor plans and delegates; the fleet does the grinding.",
   "type": "module",
   "license": "MIT",
@@ -27,6 +27,10 @@
     }
   },
   "main": "./dist/index.js",
+  "files": ["dist", "agents", "commands"],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "bun build src/index.ts --outfile dist/index.js --target node",
     "pretest": "bun run build",

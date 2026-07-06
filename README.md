@@ -34,21 +34,20 @@ trawling, reading, and bulk editing.
 
 ## Install
 
-opencode uses Bun to resolve plugin specifiers, so any git URL Bun
-understands works. Install straight from GitHub:
+Published to npm as `@balatd/gorc`. opencode auto-installs it on startup:
 
 ```jsonc
 // opencode.jsonc
 {
   "$schema": "https://opencode.ai/config.json",
-  "plugin": ["github:balatD/gorc"]
+  "plugin": ["@balatd/gorc"]
 }
 ```
 
 To make the conductor your default agent:
 
 ```jsonc
-"plugin": [["github:balatD/gorc", { "defaultAgent": "conductor" }]]
+"plugin": [["@balatd/gorc", { "defaultAgent": "conductor" }]]
 ```
 
 ## The fleet
@@ -82,7 +81,7 @@ options — any field you omit keeps its default:
 
 ```jsonc
 "plugin": [[
-  "github:balatD/gorc",
+  "@balatd/gorc",
   {
     "conductorModel": "anthropic/claude-sonnet-4-6",
     "researchModel": "anthropic/claude-haiku-4-5",

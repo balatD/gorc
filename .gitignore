@@ -1,5 +1,5 @@
 node_modules/
 *.log
 .npmrc
-# dist/ IS the artifact installed via git — keep it committed for github: installs
+# dist/ is rebuilt by CI before `npm publish`; kept committed for local file:// dev installs
 .DS_Store
