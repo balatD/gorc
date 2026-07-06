@@ -27,19 +27,8 @@
     }
   },
   "main": "./dist/index.js",
-  "files": [
-    "dist",
-    "agents",
-    "commands",
-    "README.md",
-    "LICENSE"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "bun build src/index.ts --outfile dist/index.js --target node",
-    "prepublishOnly": "bun run build",
     "pretest": "bun run build",
     "test": "bun ./test/smoke.mjs"
   },

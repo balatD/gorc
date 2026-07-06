@@ -11,8 +11,8 @@ trawling, reading, and bulk editing.
 
 ## Install
 
-No npm publish required. opencode uses Bun to resolve plugin specifiers, so
-any git URL Bun understands works. Install straight from GitHub:
+opencode uses Bun to resolve plugin specifiers, so any git URL Bun
+understands works. Install straight from GitHub:
 
 ```jsonc
 // opencode.jsonc
@@ -22,16 +22,10 @@ any git URL Bun understands works. Install straight from GitHub:
 }
 ```
 
-If you prefer the npm-published package, that still works too:
-
-```jsonc
-"plugin": ["@balatd/gorc"]
-```
-
 To make the conductor your default agent:
 
 ```jsonc
-"plugin": [["@balatd/gorc", { "defaultAgent": "conductor" }]]
+"plugin": [["github:balatD/gorc", { "defaultAgent": "conductor" }]]
 ```
 
 ## The fleet
@@ -65,7 +59,7 @@ options — any field you omit keeps its default:
 
 ```jsonc
 "plugin": [[
-  "@balatd/gorc",
+  "github:balatD/gorc",
   {
     "conductorModel": "anthropic/claude-sonnet-4-6",
     "researchModel": "anthropic/claude-haiku-4-5",
@@ -120,7 +114,7 @@ bun install
 bun run build        # -> dist/index.js
 ```
 
-Test locally by pointing your config at the built file before publishing:
+Test locally by pointing your config at the built file:
 
 ```jsonc
 "plugin": ["file:///Users/you/Projects/gorc/dist/index.js"]
